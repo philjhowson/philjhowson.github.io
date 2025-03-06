@@ -5,9 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Phil J. Howson</title>
     <link rel="stylesheet" href="css/style.css">
-</head>
 
+    <style>
+        body {
+            background-color: #1a1a1a; /* Dark mode, baby */
+            color: white;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 5px;
+        }
+
+        .project-box {
+            width: 30%;
+            min-width: 250px;
+            max-width: 400px;
+            padding: 20px;
+            background: black;
+            border: 2px solid white;
+            border-radius: 10px;
+            text-align: left;
+            box-shadow: 5px 5px 15px rgba(255, 255, 255, 0.2);
+            margin: 20px;
+        }
+
+        h3 {
+            color: #8c00ff;
+        }
+    </style>
+</head>
 <body>
+
     <header>
         <div class="header-container">
             <div class="name">
@@ -16,13 +44,62 @@
             <nav class="nav-links">
                 <ul>
                     <li><a href="index.html">Home</a></li>
-					<li><a href="resume.html">Resume</a></li>
+                    <li><a href="resume.html">Resume</a></li>
                     <li><a href="projects.html">Projects</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-	
-</body>
 
+    <div class="project-box">
+        <h3 style="font-variant: small-caps;">Computer Vision</h3>
+        <p>I am broadly interested in computer vision for a wide range of tasks, including, but not limited to
+            medical diagnosis, recommender systems, object detection, and automation of services. I am always
+            working to improve my knowledge and ability in this domain.</p>
+        <p style="font-variant: small-caps;">Completed:</p><p>
+            <ol>
+                <li><a href = "https://github.com/philjhowson/BrainTumorDetection">Brain Tumor Detection</a>:
+                I used CNNs to identify and diagnose the presence of brain tumors in patients. I used ResNet50,
+                DenseNet, and a custom built CNN to measure performance in tumor detection.</li></ol></p>
+            <p style="font-variant: small-caps;">Current:</p><p>
+            <ol>
+                <li>Bone Fractures Dataset</li>
+                <li>Blood Cell Classification Dataset</li>
+            </ol>
+        </p>
+    </div>
+
+    <div class="project-box">
+        <h3 style="font-variant: small-caps;">Predictive Statistics</h3>
+        <p>I am interested in the use of statistical methodologies to make future predictions. I am experienced in
+            linear and non-linear models, SVMs, random forests, XGBoost, and other methodologies. I enjoy learning
+            and mastering new statistical methodologies.</p>
+        <p style="font-variant: small-caps;">Completed:</p><p>
+            <ol>
+                <li><a href = "https://github.com/philjhowson/Data_Cleaning_FIFA">FIFA Salaries</a>: This data set
+                was relatively raw and required a significant amount of data cleaning and preparation before analysis.
+                I used a random forests regressor, XGBoost regressor, and an FNN to explore the connection between
+                player statistics and salary.</li>
+            </ol>
+        <p style="font-variant: small-caps;">Current:</p><p>
+            <ol>
+                <li>Heart Disease Dataset</li>
+                <li>Housing Prices Dataset</li>
+            </ol>
+    </div>
+
+    <div class="project-box">
+        <h3 style="font-variant: small-caps;">Other Projects</h3>
+        <p>I am also interested in other machine learning use cases, such as recommender systems, audio and speech
+            processing, generative models, chatbots, and NLP.</p>
+        <p style="font-variant: small-caps;">Current:</p><p>
+            <ol>
+                <li>Restaurant Recommender System</li>
+                <li>German Language Synthesizer</li>
+            </ol> 
+        </p>
+    </div>
+
+</body>
+</html>

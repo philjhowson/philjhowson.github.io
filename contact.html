@@ -1,28 +1,77 @@
 <!DOCTYPE html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Phil J. Howson</title>
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            background-color: #1a1a1a; /* Dark mode */
+            color: white;
+            display: flex;
+            justify-content: center; /* Center card */
+            align-items: center;
+            height: 100vh; /* Full screen height */
+            margin: 0;
+        }
+
+        .project-box {
+            width: 350px; /* Fixed width for a card look */
+            padding: 25px;
+            background: black; /* Slightly lighter black */
+            border: 1px solid #8c00ff; /* Subtle accent */
+            border-radius: 15px; /* Rounded edges */
+            text-align: center; /* Centered text */
+            box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1); /* Soft shadow */
+            margin: 20px;
+        }
+
+        .project-box h3 {
+            color: #8c00ff;
+            margin-bottom: 10px;
+            font-size: 1.5em;
+        }
+
+        .project-box p {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px; /* Space between icon & text */
+            font-size: 1em;
+        }
+
+        .project-box img {
+            width: 24px; /* Icon size */
+            height: auto;
+            filter: brightness(0.9);
+        }
+
+        .project-box a {
+            color: #8c00ff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .project-box a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 
 <body>
-    <header>
-        <div class="header-container">
-            <div class="name">
-                <h1>Phil J. Howson</h1>
-            </div>
-            <nav class="nav-links">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-					<li><a href="resume.html">Resume</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-	
+
+    <div class="project-box">
+        <h3 style="font-variant: small-caps;">Phil J. Howson</h3>
+        <p>Data Science | Machine Learning</p>
+        <p><img src="images/email.jpg" alt="Email Icon"> philjhowson@outlook.com</p>
+        <p><img src="images/github.jpg" alt="GitHub Icon"> <a href="https://github.com/philjhowson">GitHub</a></p>
+        <p><img src="images/linkedin.png" alt="LinkedIn Icon"> <a href="https://www.linkedin.com/in/philjhowson/">LinkedIn</a></p>
+    </div>
+
 </body>
+
+</html>
+
 
